@@ -1,8 +1,11 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
+  
+
+      {/* Main Content */}
       <main className="flex-grow">
         <div className="bg-green-50 py-20">
           <div className="container mx-auto text-center">
@@ -12,8 +15,6 @@ export default function Home() {
             <p className="text-xl text-green-600">
               Natural Healing for a Healthier You
             </p>
-            
-            
             <Link href="/homeoCare">
               <button className="mt-8 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
                 Learn More
@@ -22,6 +23,8 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      
     </div>
   );
 }
