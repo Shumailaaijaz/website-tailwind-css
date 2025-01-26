@@ -4,33 +4,7 @@ import Image from "next/image";
 export default function HomeoCarePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Header */}
-      <header className="bg-green-600 text-white p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold">
-            HomeoCare
-          </Link>
-          <nav>
-            <ul className="flex space-x-6">
-              <li>
-                <Link href="/" className="hover:text-green-200">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-green-200">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-green-200">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* Main Content */}
       <main className="flex-grow container mx-auto p-6">
@@ -43,7 +17,7 @@ export default function HomeoCarePage() {
           {/* Image */}
           <div className="mb-8">
             <Image
-              src="/homeopathy.jpg" // Replace with your image path
+              src="/homeopathy.png" // Replace with your image path
               alt="Homeopathy"
               width={800} // Set the width
               height={400} // Set the height
@@ -86,13 +60,7 @@ export default function HomeoCarePage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-green-800 text-white p-6 mt-8">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2023 HomeoCare. All rights reserved.</p>
-          <p className="mt-2">Healing Naturally, Always.</p>
-        </div>
-      </footer>
+      
     </div>
   );
 }
